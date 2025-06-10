@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>이규호의 포트폴리오</title>
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Pretendard Variable', sans-serif;
+      background-color: #000;
+      color: #fff;
+      line-height: 1.8;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid #333;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: #ccc;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+      padding: 6rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      border-bottom: 2px solid #333;
+      padding-bottom: 1rem;
+      color: #fff;
+    }
+
+    p, li {
+      font-size: 1.1rem;
+      color: #ddd;
+    }
+
+    h3 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #222;
+      color: #eee;
+      padding: 0.6rem 1.2rem;
+      margin: 0.4rem;
+      border-radius: 30px;
+      font-size: 0.95rem;
+      border: 1px solid #444;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background: #111;
+      color: #888;
+      text-align: center;
+      padding: 3rem 1rem;
+      border-top: 1px solid #333;
+    }
+
+    a {
+      color: #7fc8ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>이규호의 포트폴리오</h1>
+    <nav>
+      <a href="#about">소개</a>
+      <a href="#skills">기술</a>
+      <a href="#projects">프로젝트</a>
+      <a href="#contact">연락처</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>소개</h2>
+    <p>안녕하세요. 저는 동양미래대학교 컴퓨터소프트웨어공학과에 재학 중인 이규호입니다. 창의적인 아이디어와 깔끔한 코드로 문제를 해결하는 것을 좋아하며, 사용자의 경험을 고려한 프론트엔드 개발에 관심이 많습니다.</p>
+    <br/>
+    <h3>이력 요약</h3>
+    <ul>
+      <li>2023.03 ~ 현재 : 동양미래대학교 재학</li>
+      <li>2024.07 ~ 2024.08 : 삼성 청년 SW 아카데미(SSAFY) 여름 캠프 참여</li>
+      <li>2024.12 ~ 2025.02 : 스타트업 XYZ에서 프론트엔드 인턴 (React 기반 UI 개선)</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>기술 스택</h2>
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>Tailwind CSS</span>
+      <span>Git</span>
+      <span>Figma</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>프로젝트</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>포트폴리오 웹사이트</h3>
+        <p>HTML, CSS, JS로 제작한 개인 포트폴리오입니다. 반응형 디자인과 간단한 인터랙션을 구현했습니다.</p>
+      </div>
+      <div class="project-card">
+        <h3>Todo App</h3>
+        <p>JavaScript를 활용해 CRUD 기능이 있는 할 일 목록 앱을 만들었습니다. LocalStorage를 활용하여 데이터 보존 기능을 구현했습니다.</p>
+      </div>
+      <div class="project-card">
+        <h3>캠퍼스 정보 공유 플랫폼 (팀 프로젝트)</h3>
+        <p>React 기반의 동양미래대학교 학생용 커뮤니티 앱. 글쓰기, 댓글, 좋아요 기능 포함. Firebase 사용.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>연락처</h2>
+    <p>이메일: <a href="mailto:kgyooho.dev@example.com">kgyooho.dev@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/kgyooho" target="_blank">github.com/kgyooho</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/kgyooho" target="_blank">linkedin.com/in/kgyooho</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 이규호. 모든 권리 보유.</p>
+  </footer>
+
+  <script>
+    console.log("이규호의 포트폴리오 페이지 로드 완료");
+  </script>
+
+</body>
+</html>
